@@ -20,3 +20,4 @@ Route::get('/hello', function(){
     echo "Hello World";
 });
 Route::get('/c', [PageController::class, 'hello']);
+Route::get('/add', [UserController::class, 'add']);
