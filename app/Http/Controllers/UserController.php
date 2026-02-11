@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function add(){
-        return view('add');
+    public function index(){
+        return view('users');
     }
 }
