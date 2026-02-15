@@ -153,13 +153,9 @@ Goal: Professional skills
 Topics:
 
     Middleware
-
     Authorization (Gates & Policies)
-
     Resource controllers
-
     Pagination
-
     API basics
 
 JSON responses
