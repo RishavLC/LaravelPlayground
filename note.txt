@@ -152,15 +152,15 @@ Goal: Professional skills
 
 Topics:
 
-Middleware
+    Middleware
 
-Authorization (Gates & Policies)
+    Authorization (Gates & Policies)
 
-Resource controllers
+    Resource controllers
 
-Pagination
+    Pagination
 
-API basics
+    API basics
 
 JSON responses
 
