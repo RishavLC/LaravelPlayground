@@ -229,6 +229,3 @@ Day 7	Mini Project
 
 ✅ Understand flow: Route → Controller → Model → View
 ROUTE AND CONTROLLER MAIN LEARN FOR THIS
-
-
-
