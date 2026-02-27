@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/hello', function(){
-    echo "Hello World";
+    return "Hello World";
 });
 Route::get('/c', [PageController::class, 'hello']);
 Route::get('/index', [UserController::class, 'index']);
+Route::get('/about', function(){
+    return "This is about page";
+});
