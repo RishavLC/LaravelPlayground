@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +26,7 @@ Route::get('/index', [UserController::class, 'index']);
 Route::get('/about', function(){
     return "This is about page";
 });
+Route::resource('/products', ProductController::class);
 
 Route::get('/form', function () {
     return '
