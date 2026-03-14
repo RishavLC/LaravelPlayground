@@ -9,7 +9,7 @@ class ProductController extends Controller
     // Show all products
     public function index()
     {
-        return "This is product list";
+        return "This is product in table";
     }
 
     // Show form to create product
