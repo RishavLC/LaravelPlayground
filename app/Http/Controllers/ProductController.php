@@ -1,50 +1,48 @@
 <?php
-
-namespace App\Http\Controllers;
-
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    // Show all products
+    // READ (All)
     public function index()
     {
-        return "This is product in table";
+        $products = Product::all();
+        return view('products.index', compact('products'));
     }
 
-    // Show form to create product
+    // CREATE FORM
     public function create()
     {
-        return "Product create form";
+        return view('products.create');
     }
 
-    // Store product in database
+    // STORE
     public function store(Request $request)
     {
-        return "Product stored";
+        Product::create($request->all());
+        return redirect('/products');
     }
 
-    // Show single product
-    public function show($id)
-    {
-        return "Product id: " . $id;
-    }
-
-    // Show edit form
+    // EDIT FORM
     public function edit($id)
     {
-        return "Edit product id: " . $id;
+        $product = Product::find($id);
+        return view('products.edit', compact('product'));
     }
 
-    // Update product
+    // UPDATE
     public function update(Request $request, $id)
     {
-        return "Product updated " . $id;
+        $product = Product::find($id);
+        $product->update($request->all());
+        return redirect('/products');
     }
 
-    // Delete product
+    // DELETE
     public function destroy($id)
     {
-        return "Product deleted " . $id;
+        Product::destroy($id);
+        return redirect('/products');
     }
 }
